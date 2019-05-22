@@ -68,6 +68,11 @@ open class MSButton: UIButton {
         initialize()
     }
 
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialize()
+    }
+
     open func initialize() {
         layer.cornerRadius = Constants.cornerRadius
         update()
